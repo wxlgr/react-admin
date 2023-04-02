@@ -1,0 +1,51 @@
+
+/* 
+        引入antd中的reset样式
+ */
+ @import url('antd/dist/antd.css');
+#root,.app{
+    height: 100%;
+}
+
+.app{
+    display: flex;
+    background-color: #f8f9fa;
+}
+.m-slide{
+    width: 256px;
+    height: 100%;
+}
+.m-content{
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    /* background-color: #bfa; */
+}
+
+
+.ant-menu{
+    height: 100%;
+}
+
+.m-operator{
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+/* 只读弹窗 */
+.m-readonly-modal .ant-form-item{
+    /* 清除鼠标事件 */
+    pointer-events: none;
+}
+
+.m-readonly-modal .ant-modal-footer{
+    visibility: hidden;
+}
+/* 隐藏头像上传的按钮 */
+.m-readonly-modal .ant-upload-select-picture-card{
+    visibility: hidden;
+}
+
+.m-filter{
+    margin: 10px auto;
+}
